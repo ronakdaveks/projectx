@@ -1,0 +1,158 @@
+<title>X Confidence Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: one calm column, five evidence panels, each a single chart with one plain claim above it. Palette from the teaser: black, white, grey; gold marks protection only. */
+:root{--bg:#F8F8F6;--surface:#FFFFFF;--ink:#0B0B0C;--ink2:#4B4B50;--muted:#85858B;--rule:#E1E1DD;--mute-fill:#B9B9BE;--gold:#C9A24A;--gold-ink:#7A5C0F;--track:#EFEFEC;--font:'Inter','Helvetica Neue',Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#050505;--surface:#0E0E0F;--ink:#F2F2F2;--ink2:#B6B6BB;--muted:#8A8A90;--rule:#262628;--mute-fill:#55555B;--gold:#C9A24A;--gold-ink:#D9B766;--track:#1A1A1C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#050505;--surface:#0E0E0F;--ink:#F2F2F2;--ink2:#B6B6BB;--muted:#8A8A90;--rule:#262628;--mute-fill:#55555B;--gold:#C9A24A;--gold-ink:#D9B766;--track:#1A1A1C;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.55;padding-block:32px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{padding:8px 0 20px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+h1{font-weight:200;font-size:clamp(30px,6vw,48px);line-height:1.08;letter-spacing:.01em;margin:10px 0 12px;text-wrap:balance}
+h1 b{font-weight:500}
+.lede{color:var(--ink2);max-width:62ch;margin:0 0 18px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.facts div{background:var(--surface);padding:12px 14px;min-width:0}
+.facts b{display:block;font-weight:300;font-size:26px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.facts span{font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+section.p{background:var(--surface);border:1px solid var(--rule);padding:22px clamp(16px,3vw,28px) 20px;display:flex;flex-direction:column;gap:14px}
+.p h2{font-weight:300;font-size:clamp(20px,3.4vw,26px);line-height:1.2;margin:0;text-wrap:balance}
+.p h2 em{font-style:normal;font-weight:500}
+.p>p{margin:0;color:var(--ink2);max-width:66ch}
+.k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.grp{display:flex;flex-direction:column;gap:6px;padding:10px 0;border-top:1px solid var(--rule)}
+.grp:first-of-type{border-top:0}
+.gname{font-size:12.5px;font-weight:500;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.gname span{font-weight:400;color:var(--muted)}
+.row{display:grid;grid-template-columns:minmax(104px,210px) minmax(0,1fr) auto;align-items:center;gap:12px}
+.lab{font-size:13px;line-height:1.3;min-width:0}
+.lab .sub{display:block;font-size:11.5px;color:var(--muted)}
+.track{height:14px;background:var(--track);border-radius:0 4px 4px 0;min-width:0}
+.fill{height:100%;border-radius:0 4px 4px 0}
+.fill.ink{background:var(--ink)}.fill.mute{background:var(--mute-fill)}.fill.gold{background:var(--gold)}
+.val{font-size:13px;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--ink2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.callout{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;border-left:2px solid var(--gold);padding:2px 0 2px 14px}
+.callout b{font-weight:300;font-size:30px;font-variant-numeric:tabular-nums}
+.callout span{color:var(--ink2);font-size:13.5px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+@media (max-width:720px){.two{grid-template-columns:minmax(0,1fr)}.row{grid-template-columns:minmax(0,1fr) auto}.row .track{grid-column:1/-1;order:3}}
+.axisnote{position:relative;height:0}
+.axisnote .one{position:absolute;top:0;width:0}
+.col{display:flex;flex-direction:column;gap:10px;min-width:0}
+.col h3{margin:0;font-size:12.5px;font-weight:500}
+svg{display:block;width:100%;height:auto;max-width:100%}
+svg .gl{stroke:var(--rule);stroke-width:1}svg .gl.one{stroke:var(--gold);stroke-width:1.5}
+svg .ax{fill:var(--muted);font-size:11px;font-family:var(--font)}
+svg .ann{fill:var(--ink2);font-size:11.5px;font-family:var(--font)}
+svg .ln{fill:none;stroke:var(--ink);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+svg .dot{fill:var(--ink);stroke:var(--surface);stroke-width:2}
+svg .ring{fill:none;stroke:var(--gold);stroke-width:2}
+.chips{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.chip{position:relative;display:flex;flex-direction:column;gap:2px;padding:9px 11px;border:1px solid var(--rule);min-width:0}
+.chip .cs{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.chip .ct{font-size:12.5px;line-height:1.3}
+.chip .g1{position:absolute;top:8px;right:9px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
+.chip.inferred{border-left:4px solid var(--ink)}
+.chip.assumed{border-left:4px solid var(--mute-fill)}
+.chip.uncertain{border-left:4px dotted var(--muted)}
+.chip.disputed{border-left:4px solid var(--muted);background:repeating-linear-gradient(135deg,transparent 0 6px,var(--track) 6px 8px)}
+.tally{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--ink2)}
+.tally b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums}
+.safe{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.safe li{background:var(--surface);padding:14px 16px;min-width:0}
+.safe h4{margin:0 0 4px;font-size:13.5px;font-weight:500;display:flex;align-items:center;gap:8px}
+.safe h4::before{content:"";width:8px;height:8px;background:var(--gold);flex:none}
+.safe p{margin:0;font-size:13px;color:var(--ink2)}
+details{font-size:12.5px;color:var(--ink2)}
+summary{cursor:pointer;color:var(--muted)}summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+details table{border-collapse:collapse;margin-top:8px;width:100%;display:block;overflow-x:auto}
+details td,details th{padding:5px 12px 5px 0;text-align:left;border-bottom:1px solid var(--rule);white-space:nowrap}
+footer{font-size:11.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--ink2)}
+.note{font-size:12px;color:var(--muted);margin:0}
+@media print{body{padding-block:0}section.p{break-inside:avoid}details{display:none}}
+</style>
+<div class="wrap">
+<header>
+<div class="eyebrow">X · Intellect in Continuity · Round 1</div>
+<h1>Built so that confidence is <b>earned at each step</b></h1>
+<p class="lede">₹180 Cr for 3.0% of X at a ₹6,000 Cr post-money. The money moves in four gated tranches, the odds are shown, and every claim states how sure we are.</p>
+<div class="facts">
+<div><b>₹180 Cr</b><span>Round 1 (≈ US$20 mn)</span></div>
+<div><b>3.0%</b><span>new-investor stake</span></div>
+<div><b>₹6,000 Cr</b><span>post-money (≈ US$0.67 bn)</span></div>
+<div><b>4 gates</b><span>₹45 Cr released on each</span></div>
+</div>
+</header>
+
+<section class="p">
+<span class="k">1 · Capital at risk</span>
+<h2>If Gate 1 fails, the loss is <em>₹31.5 Cr</em>, not ₹180 Cr</h2>
+<p>Each tranche is released only after an independent Scientific Advisory Board confirms the gate. A 1x preference and wind-down recovery limit what is lost when the venture stops.</p>
+<div class="legend"><span><i style="background:var(--mute-fill)"></i>Paid in</span><span><i style="background:var(--ink)"></i>Net loss after recovery</span><span><i style="background:var(--gold)"></i>Full round committed</span></div>
+<div><div class="grp"><div class="gname">Stops at Gate 1<span>30% recovered (assumption)</span></div><div class="row" title="Stops at Gate 1: ₹45 Cr paid in"><div class="lab">Paid in</div><div class="track"><div class="fill mute" style="width:25.00%"></div></div><div class="val">₹45 Cr</div></div><div class="row" title="Stops at Gate 1: net loss ₹31.5 Cr (17.5% of the round)"><div class="lab">Net loss</div><div class="track"><div class="fill ink" style="width:17.50%"></div></div><div class="val">₹31.5 Cr</div></div></div><div class="grp"><div class="gname">Stops at Gate 2<span>25% recovered (assumption)</span></div><div class="row" title="Stops at Gate 2: ₹90 Cr paid in"><div class="lab">Paid in</div><div class="track"><div class="fill mute" style="width:50.00%"></div></div><div class="val">₹90 Cr</div></div><div class="row" title="Stops at Gate 2: net loss ₹67.5 Cr (37.5% of the round)"><div class="lab">Net loss</div><div class="track"><div class="fill ink" style="width:37.50%"></div></div><div class="val">₹67.5 Cr</div></div></div><div class="grp"><div class="gname">Stops at Gate 3<span>20% recovered (assumption)</span></div><div class="row" title="Stops at Gate 3: ₹135 Cr paid in"><div class="lab">Paid in</div><div class="track"><div class="fill mute" style="width:75.00%"></div></div><div class="val">₹135 Cr</div></div><div class="row" title="Stops at Gate 3: net loss ₹108 Cr (60.0% of the round)"><div class="lab">Net loss</div><div class="track"><div class="fill ink" style="width:60.00%"></div></div><div class="val">₹108 Cr</div></div></div><div class="grp"><div class="gname">Full round<span>all four tranches released</span></div><div class="row" title="Committed: ₹180 Cr"><div class="lab">Committed</div><div class="track"><div class="fill gold" style="width:100.00%"></div></div><div class="val">₹180 Cr</div></div></div></div>
+<div class="callout"><b>17.5%</b><span>of the round is exposed at Gate 1. Recovery rates of 30%, 25% and 20% are assumptions.</span></div>
+<details><summary>View as table</summary><table><tr><th>If the venture stops at</th><th>Paid in (₹ Cr)</th><th>Recovered (₹ Cr)</th><th>Net loss (₹ Cr)</th></tr><tr><td>Gate 1</td><td>45</td><td>13.5</td><td>31.5</td></tr><tr><td>Gate 2</td><td>90</td><td>22.5</td><td>67.5</td></tr><tr><td>Gate 3</td><td>135</td><td>27</td><td>108</td></tr></table></details>
+</section>
+
+<section class="p">
+<span class="k">2 · Price against the market</span>
+<h2>X is priced at <em>44%</em> of India’s lead sovereign-AI company, with exit scenarios inside the range large buyers have paid</h2>
+<p>Three groups on one scale, in US$ billion. Grey bars are market reference points; black bars are X. The three exit scenarios sit inside the range large buyers have paid for technology and teams, well below the top of it.</p>
+<div><div class="grp"><div class="gname">Reported valuations</div><div class="row" title="Safe Superintelligence: US$32 bn"><div class="lab">Safe Superintelligence<span class="sub">pre-product, Apr 2025</span></div><div class="track"><div class="fill mute" style="width:100.00%"></div></div><div class="val">US$32 bn</div></div><div class="row" title="Sarvam AI: US$1.5 bn"><div class="lab">Sarvam AI<span class="sub">Series B, Jun 2026</span></div><div class="track"><div class="fill mute" style="width:4.69%"></div></div><div class="val">US$1.5 bn</div></div><div class="row" title="X post-money: US$0.67 bn"><div class="lab">X post-money<span class="sub">₹6,000 Cr</span></div><div class="track"><div class="fill ink" style="width:2.08%"></div></div><div class="val">US$0.67 bn</div></div></div><div class="grp"><div class="gname">Licence-and-hire deals paid by large buyers</div><div class="row" title="Nvidia–Groq: ≈ US$20 bn"><div class="lab">Nvidia–Groq<span class="sub">Dec 2025</span></div><div class="track"><div class="fill mute" style="width:62.50%"></div></div><div class="val">≈ US$20 bn</div></div><div class="row" title="Google–Character.AI: ≈ US$2.7 bn"><div class="lab">Google–Character.AI<span class="sub">Aug 2024</span></div><div class="track"><div class="fill mute" style="width:8.44%"></div></div><div class="val">≈ US$2.7 bn</div></div><div class="row" title="Microsoft–Inflection: ≈ US$0.65 bn"><div class="lab">Microsoft–Inflection<span class="sub">Mar 2024</span></div><div class="track"><div class="fill mute" style="width:2.03%"></div></div><div class="val">≈ US$0.65 bn</div></div></div><div class="grp"><div class="gname">X exit scenarios in the model</div><div class="row" title="S1 Co-creation: US$10 bn"><div class="lab">S1 Co-creation<span class="sub">5% odds</span></div><div class="track"><div class="fill ink" style="width:31.25%"></div></div><div class="val">US$10 bn</div></div><div class="row" title="S2 Platform sale or licence: US$3.3 bn"><div class="lab">S2 Platform sale or licence<span class="sub">10% odds</span></div><div class="track"><div class="fill ink" style="width:10.41%"></div></div><div class="val">US$3.3 bn</div></div><div class="row" title="S3 Partial licence: US$0.67 bn"><div class="lab">S3 Partial licence<span class="sub">15% odds</span></div><div class="track"><div class="fill ink" style="width:2.08%"></div></div><div class="val">US$0.67 bn</div></div></div></div>
+<p class="note">Press-reported figures, not company-confirmed. FX ₹90 per US$ is an assumption. Sources are listed below.</p>
+</section>
+
+<section class="p">
+<span class="k">3 · Use of funds</span>
+<h2>Nearly half funds the team. A <em>10.7% reserve</em> stays unallocated</h2>
+<p>All 16 quarters are funded from this round with no revenue assumed. Compute is deliberately modest because X is a model-agnostic layer, not a model. The founder allocation is still to be set and will draw on the reserve.</p>
+<div><div class="row" title="People: ₹82.7 Cr · 45.9%"><div class="lab">People<span class="sub">research, platform, trust, product, pilots, ops</span></div><div class="track"><div class="fill ink" style="width:91.87%"></div></div><div class="val">₹82.7 Cr · 45.9%</div></div><div class="row" title="Proof and protection: ₹24.1 Cr · 13.4%"><div class="lab">Proof and protection<span class="sub">validation, security, IP</span></div><div class="track"><div class="fill ink" style="width:26.78%"></div></div><div class="val">₹24.1 Cr · 13.4%</div></div><div class="row" title="Demand and Co-Creator: ₹21.8 Cr · 12.1%"><div class="lab">Demand and Co-Creator<span class="sub">pilots, Stage 2 advisory</span></div><div class="track"><div class="fill ink" style="width:24.22%"></div></div><div class="val">₹21.8 Cr · 12.1%</div></div><div class="row" title="Contingency reserve: ₹19.3 Cr · 10.7%"><div class="lab">Contingency reserve<span class="sub">unallocated</span></div><div class="track"><div class="fill gold" style="width:21.41%"></div></div><div class="val">₹19.3 Cr · 10.7%</div></div><div class="row" title="Build and compute: ₹18.6 Cr · 10.3%"><div class="lab">Build and compute<span class="sub">compute, cross-model testing</span></div><div class="track"><div class="fill ink" style="width:20.67%"></div></div><div class="val">₹18.6 Cr · 10.3%</div></div><div class="row" title="Operations and options: ₹13.6 Cr · 7.5%"><div class="lab">Operations and options<span class="sub">governance, facilities, frontier option</span></div><div class="track"><div class="fill ink" style="width:15.06%"></div></div><div class="val">₹13.6 Cr · 7.5%</div></div></div>
+<details><summary>View as table</summary><table><tr><th>Category</th><th>₹ Cr</th><th>% of round</th></tr><tr><td>People</td><td>82.7</td><td>45.9%</td></tr><tr><td>Proof and protection</td><td>24.1</td><td>13.4%</td></tr><tr><td>Demand and Co-Creator</td><td>21.8</td><td>12.1%</td></tr><tr><td>Contingency reserve</td><td>19.3</td><td>10.7%</td></tr><tr><td>Build and compute</td><td>18.6</td><td>10.3%</td></tr><tr><td>Operations and options</td><td>13.6</td><td>7.5%</td></tr></table></details>
+</section>
+
+<section class="p">
+<span class="k">4 · The odds are on the page</span>
+<h2>Best case <em>10.5x</em>. Expected <em>2.0x</em>. We show what an investor must believe</h2>
+<p>Six outcomes with placeholder probabilities. The right-hand chart shows how likely success must be before ₹6,000 Cr clears a 30% hurdle. An investor can replace every number in the model.</p>
+<div class="two">
+<div class="col"><h3>Return multiple by outcome</h3><div class="row" title="S1 Co-creation: 10.5x"><div class="lab">S1 Co-creation<span class="sub">5% probability</span></div><div class="track"><div class="fill ink" style="width:95.45%"></div></div><div class="val">10.5x</div></div><div class="row" title="S2 Platform sale or licence: 4.25x"><div class="lab">S2 Platform sale or licence<span class="sub">10% probability</span></div><div class="track"><div class="fill ink" style="width:38.64%"></div></div><div class="val">4.25x</div></div><div class="row" title="S3 Partial licence: 1.0x"><div class="lab">S3 Partial licence<span class="sub">15% probability</span></div><div class="track"><div class="fill ink" style="width:9.09%"></div></div><div class="val">1.0x</div></div><div class="row" title="S4 Stops after Gate 3: 0.2x"><div class="lab">S4 Stops after Gate 3<span class="sub">10% probability</span></div><div class="track"><div class="fill mute" style="width:1.82%"></div></div><div class="val">0.2x</div></div><div class="row" title="S5 Stops at Gate 2: 0.25x"><div class="lab">S5 Stops at Gate 2<span class="sub">25% probability</span></div><div class="track"><div class="fill mute" style="width:2.27%"></div></div><div class="val">0.25x</div></div><div class="row" title="S6 Stops at Gate 1: 0.3x"><div class="lab">S6 Stops at Gate 1<span class="sub">35% probability</span></div><div class="track"><div class="fill mute" style="width:2.73%"></div></div><div class="val">0.3x</div></div><div class="legend"><span><i style="background:var(--ink)"></i>Returns capital or more</span><span><i style="background:var(--mute-fill)"></i>Below 1.0x</span></div></div>
+<div class="col"><h3>Hurdle-adjusted index vs success odds</h3><svg viewBox="0 0 420 230" role="img" aria-label="Hurdle-adjusted index rises from 0.46x at 15% success odds to 1.24x at 90%, crossing 1.0x near 60%">
+<line class="gl" x1="44" x2="402" y1="174.2" y2="174.2"/><text class="ax" x="36" y="178.2" text-anchor="end">0.4x</text><line class="gl" x1="44" x2="402" y1="142.5" y2="142.5"/><text class="ax" x="36" y="146.5" text-anchor="end">0.6x</text><line class="gl" x1="44" x2="402" y1="110.9" y2="110.9"/><text class="ax" x="36" y="114.9" text-anchor="end">0.8x</text><line class="gl one" x1="44" x2="402" y1="79.3" y2="79.3"/><text class="ax" x="36" y="83.3" text-anchor="end">1.0x</text><line class="gl" x1="44" x2="402" y1="47.6" y2="47.6"/><text class="ax" x="36" y="51.6" text-anchor="end">1.2x</text><line class="gl" x1="44" x2="402" y1="16.0" y2="16.0"/><text class="ax" x="36" y="20.0" text-anchor="end">1.4x</text><text class="ax" x="65.1" y="210" text-anchor="middle">15%</text><text class="ax" x="128.2" y="210" text-anchor="middle">30%</text><text class="ax" x="191.4" y="210" text-anchor="middle">45%</text><text class="ax" x="254.6" y="210" text-anchor="middle">60%</text><text class="ax" x="317.8" y="210" text-anchor="middle">75%</text><text class="ax" x="380.9" y="210" text-anchor="middle">90%</text>
+<polyline class="ln" points="65.1,164.4 128.2,128.9 191.4,100.5 254.6,77.1 317.8,57.4 380.9,40.7"/><circle class="dot" cx="65.1" cy="164.4" r="4.5"><title>15% success odds: index 0.46x</title></circle><circle class="dot" cx="128.2" cy="128.9" r="4.5"><title>30% success odds: index 0.69x</title></circle><circle class="dot" cx="191.4" cy="100.5" r="4.5"><title>45% success odds: index 0.87x</title></circle><circle class="dot" cx="254.6" cy="77.1" r="4.5"><title>60% success odds: index 1.01x</title></circle><circle class="dot" cx="317.8" cy="57.4" r="4.5"><title>75% success odds: index 1.14x</title></circle><circle class="dot" cx="380.9" cy="40.7" r="4.5"><title>90% success odds: index 1.24x</title></circle>
+<circle class="ring" cx="254.6" cy="77.1" r="9"/>
+<text class="ann" x="242.6" y="61.1" text-anchor="end">clears the hurdle at ~60%</text>
+<text class="ann" x="136.2" y="150.9">base case: 30%, 0.69x</text>
+<text class="ax" x="223.0" y="227" text-anchor="middle">Total probability of the three success outcomes</text>
+</svg><p class="note">Above 1.0x the price clears a 30% hurdle. Gold line marks 1.0x.</p></div>
+</div>
+<details><summary>View as table</summary><table><tr><th>Outcome</th><th>Probability</th><th>MOIC</th></tr><tr><td>S1 Co-creation</td><td>5%</td><td>10.50x</td></tr><tr><td>S2 Platform sale or licence</td><td>10%</td><td>4.25x</td></tr><tr><td>S3 Partial licence</td><td>15%</td><td>1.00x</td></tr><tr><td>S4 Stops after Gate 3</td><td>10%</td><td>0.20x</td></tr><tr><td>S5 Stops at Gate 2</td><td>25%</td><td>0.25x</td></tr><tr><td>S6 Stops at Gate 1</td><td>35%</td><td>0.30x</td></tr></table></details>
+<p class="note">Probabilities and exit values are illustrative judgements, not derived from the Frozen Core.</p>
+</section>
+
+<section class="p">
+<span class="k">5 · Calibrated honesty</span>
+<h2>Twelve claims, each with its state. <em>None is yet demonstrated</em></h2>
+<p>The Canon’s Truthiness rule applied to the raise. Gate 1 is built to turn five of these into tested results.</p>
+<div class="tally"><span><b>0</b> Known / Demonstrated</span><span><b>3</b> Inferred</span><span><b>5</b> Assumed</span><span><b>3</b> Uncertain</span><span><b>1</b> Disputed</span></div>
+<ul class="chips"><li class="chip inferred"><span class="cs">Inferred</span><span class="ct">Capability is becoming abundant</span></li><li class="chip inferred"><span class="cs">Inferred</span><span class="ct">Continuity gap across vendors</span></li><li class="chip assumed"><span class="cs">Assumed</span><span class="ct">Identity can be specified and ported</span><span class="g1">Gate 1</span></li><li class="chip assumed"><span class="cs">Assumed</span><span class="ct">Calibration beats strong baselines</span><span class="g1">Gate 1</span></li><li class="chip assumed"><span class="cs">Assumed</span><span class="ct">Enterprises will pay</span></li><li class="chip inferred"><span class="cs">Inferred</span><span class="ct">Fit with India’s DPDP Act</span><span class="g1">Gate 1</span></li><li class="chip uncertain"><span class="cs">Uncertain</span><span class="ct">A Co-Creator will engage</span></li><li class="chip disputed"><span class="cs">Disputed</span><span class="ct">₹6,000 Cr is supportable</span></li><li class="chip assumed"><span class="cs">Assumed</span><span class="ct">Super Intellect horizon is reachable</span></li><li class="chip uncertain"><span class="cs">Uncertain</span><span class="ct">Quantum speeds the path</span></li><li class="chip uncertain"><span class="cs">Uncertain</span><span class="ct">The IP is defensible</span><span class="g1">Gate 1</span></li><li class="chip assumed"><span class="cs">Assumed</span><span class="ct">Team delivers inside ₹180 Cr</span><span class="g1">Gate 1</span></li></ul>
+<p class="note">States are proposed and need the founder’s confirmation. Each claim also has a stated limit, counter-lens and falsifier in the model.</p>
+</section>
+
+<section class="p">
+<span class="k">6 · Safeguards</span>
+<h2>Six protections written into the term sheet</h2>
+<ul class="safe"><li><h4>Tranches on verified gates</h4><p>Four ₹45 Cr releases. An independent Scientific Advisory Board confirms each gate before funds move.</p></li><li><h4>1x liquidation preference</h4><p>CCPS rank ahead of common. A ₹6,000 Cr partial exit still returns capital.</p></li><li><h4>Earned price option</h4><p>Step the price ₹3,000 / 4,500 / 6,000 / 6,000 Cr, or reset it if a gate is missed.</p></li><li><h4>Reserved matters</h4><p>Investor consent to sell or license core IP, new shares, related-party deals and budget overruns above 10%.</p></li><li><h4>IP held and escrowed</h4><p>All IP assigned to the company. Specification and code held with an independent agent.</p></li><li><h4>Quarterly Truthiness report</h4><p>Every claim, its state and its falsifier, updated each quarter and sent to investors.</p></li></ul>
+<p class="note">Proposed terms. Counsel to settle all of them.</p>
+</section>
+
+<footer>
+<div>Draft for founder review. Confidential. Not an offer of securities. All figures from X_Round1_Financial_Model.xlsx; probabilities, costs and exit values are assumptions.</div>
+<div>Sources: <a href="https://www.maginative.com/article/sutskevers-safe-superintelligence-raises-another-2b-at-32b-valuation//">SSI valuation</a> · <a href="https://www.exchange4media.com/industry-briefing-news/sarvam-raises-234m-in-first-close-of-300m-series-b-at-15b-valuation-155498.html">Sarvam AI Series B</a> · <a href="https://www.implicator.ai/nvidias-20-billion-groq-deal-perfects-silicon-valleys-favorite-antitrust-dodge/">Licence-and-hire deals</a> · <a href="https://www.legal500.com/developments/thought-leadership/abolition-of-angel-tax-in-india-a-boost-for-the-startup-ecosystem/">Angel tax abolition</a></div>
+</footer>
+</div>

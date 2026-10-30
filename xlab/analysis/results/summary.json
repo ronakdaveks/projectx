@@ -1,0 +1,1060 @@
+{
+ "names": [
+  "AI alone",
+  "AI + Quantum",
+  "AI + Intellect",
+  "Full stack",
+  "AI + Classical",
+  "AI + Intellect + Classical"
+ ],
+ "summary": [
+  {
+   "model": "c_fable51",
+   "name": "Claude Fable 5.1",
+   "org": "Anthropic",
+   "cap": 0.95,
+   "cs": 0.72,
+   "mean": [
+    0.5179,
+    0.6344,
+    0.8221,
+    0.9919,
+    0.6233,
+    0.9901
+   ],
+   "breakAI": 0.4467,
+   "breakFull": 0.0067,
+   "qA": 5,
+   "qT": 143,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "c_opus46",
+   "name": "Claude Opus 4.6",
+   "org": "Anthropic",
+   "cap": 0.89,
+   "cs": 0.63,
+   "mean": [
+    0.5013,
+    0.5638,
+    0.8221,
+    0.9886,
+    0.5623,
+    0.9859
+   ],
+   "breakAI": 0.46,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 143,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_61sol",
+   "name": "GPT-6.1 Sol",
+   "org": "OpenAI",
+   "cap": 0.93,
+   "cs": 0.69,
+   "mean": [
+    0.5125,
+    0.6066,
+    0.8235,
+    0.991,
+    0.6081,
+    0.9887
+   ],
+   "breakAI": 0.4533,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_56terra",
+   "name": "GPT-5.6 Terra",
+   "org": "OpenAI",
+   "cap": 0.86,
+   "cs": 0.59,
+   "mean": [
+    0.4784,
+    0.5539,
+    0.8224,
+    0.9886,
+    0.5568,
+    0.9846
+   ],
+   "breakAI": 0.48,
+   "breakFull": 0.0067,
+   "qA": 7,
+   "qT": 142,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_54pro",
+   "name": "GPT-5.4 Pro",
+   "org": "OpenAI",
+   "cap": 0.88,
+   "cs": 0.61,
+   "mean": [
+    0.4881,
+    0.5567,
+    0.8221,
+    0.9886,
+    0.5608,
+    0.9848
+   ],
+   "breakAI": 0.4733,
+   "breakFull": 0.0067,
+   "qA": 7,
+   "qT": 142,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_52",
+   "name": "GPT-5.2",
+   "org": "OpenAI",
+   "cap": 0.84,
+   "cs": 0.56,
+   "mean": [
+    0.4589,
+    0.5148,
+    0.8206,
+    0.9857,
+    0.5201,
+    0.9836
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_5nano",
+   "name": "GPT-5 nano",
+   "org": "OpenAI",
+   "cap": 0.64,
+   "cs": 0.38,
+   "mean": [
+    0.3627,
+    0.3505,
+    0.8185,
+    0.9728,
+    0.3509,
+    0.9653
+   ],
+   "breakAI": 0.58,
+   "breakFull": 0.0067,
+   "qA": 11,
+   "qT": 138,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_oss20",
+   "name": "gpt-oss-20b",
+   "org": "OpenAI",
+   "cap": 0.66,
+   "cs": 0.4,
+   "mean": [
+    0.3731,
+    0.362,
+    0.8189,
+    0.9764,
+    0.3692,
+    0.9704
+   ],
+   "breakAI": 0.5733,
+   "breakFull": 0.0067,
+   "qA": 10,
+   "qT": 138,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "mx822",
+   "name": "Mixtral 8x22B Instruct",
+   "org": "Mistral AI",
+   "cap": 0.72,
+   "cs": 0.44,
+   "mean": [
+    0.4068,
+    0.396,
+    0.8175,
+    0.9796,
+    0.3969,
+    0.9746
+   ],
+   "breakAI": 0.54,
+   "breakFull": 0.0067,
+   "qA": 11,
+   "qT": 135,
+   "qB": 4,
+   "n": 150
+  },
+  {
+   "model": "phi35",
+   "name": "Phi-3.5 Mini Instruct",
+   "org": "Microsoft",
+   "cap": 0.5,
+   "cs": 0.28,
+   "mean": [
+    0.2444,
+    0.2563,
+    0.8128,
+    0.9604,
+    0.2563,
+    0.9507
+   ],
+   "breakAI": 0.7,
+   "breakFull": 0.0067,
+   "qA": 13,
+   "qT": 136,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "c_opus55",
+   "name": "Claude Opus 5.5",
+   "org": "Anthropic",
+   "cap": 0.94,
+   "cs": 0.7,
+   "mean": [
+    0.5178,
+    0.6204,
+    0.8221,
+    0.9918,
+    0.6201,
+    0.99
+   ],
+   "breakAI": 0.4467,
+   "breakFull": 0.0067,
+   "qA": 5,
+   "qT": 143,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "c_opus45",
+   "name": "Claude Opus 4.5",
+   "org": "Anthropic",
+   "cap": 0.87,
+   "cs": 0.6,
+   "mean": [
+    0.4859,
+    0.556,
+    0.8221,
+    0.9886,
+    0.5609,
+    0.9844
+   ],
+   "breakAI": 0.4733,
+   "breakFull": 0.0067,
+   "qA": 7,
+   "qT": 142,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_6sol",
+   "name": "GPT-6 Sol",
+   "org": "OpenAI",
+   "cap": 0.92,
+   "cs": 0.67,
+   "mean": [
+    0.5053,
+    0.5888,
+    0.8221,
+    0.9894,
+    0.5904,
+    0.9871
+   ],
+   "breakAI": 0.46,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_56luna",
+   "name": "GPT-5.6 Luna",
+   "org": "OpenAI",
+   "cap": 0.8,
+   "cs": 0.52,
+   "mean": [
+    0.4433,
+    0.4722,
+    0.8194,
+    0.9842,
+    0.4733,
+    0.982
+   ],
+   "breakAI": 0.5067,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_54",
+   "name": "GPT-5.4",
+   "org": "OpenAI",
+   "cap": 0.86,
+   "cs": 0.58,
+   "mean": [
+    0.4784,
+    0.5419,
+    0.8224,
+    0.9886,
+    0.5448,
+    0.9858
+   ],
+   "breakAI": 0.48,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 143,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_5pro",
+   "name": "GPT-5 Pro",
+   "org": "OpenAI",
+   "cap": 0.84,
+   "cs": 0.56,
+   "mean": [
+    0.4589,
+    0.5148,
+    0.8206,
+    0.9857,
+    0.5201,
+    0.9836
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_o3pro",
+   "name": "o3-pro",
+   "org": "OpenAI",
+   "cap": 0.82,
+   "cs": 0.54,
+   "mean": [
+    0.4552,
+    0.5109,
+    0.8194,
+    0.985,
+    0.5177,
+    0.9811
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "dsv3",
+   "name": "DeepSeek-V3",
+   "org": "DeepSeek",
+   "cap": 0.84,
+   "cs": 0.55,
+   "mean": [
+    0.4531,
+    0.5148,
+    0.8206,
+    0.9857,
+    0.5144,
+    0.9836
+   ],
+   "breakAI": 0.5067,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "gem27",
+   "name": "Gemma 2 27B",
+   "org": "Google",
+   "cap": 0.7,
+   "cs": 0.42,
+   "mean": [
+    0.3919,
+    0.378,
+    0.8192,
+    0.9778,
+    0.378,
+    0.9754
+   ],
+   "breakAI": 0.56,
+   "breakFull": 0.0067,
+   "qA": 9,
+   "qT": 138,
+   "qB": 3,
+   "n": 150
+  },
+  {
+   "model": "c_sonnet55",
+   "name": "Claude Sonnet 5.5",
+   "org": "Anthropic",
+   "cap": 0.91,
+   "cs": 0.66,
+   "mean": [
+    0.5026,
+    0.5807,
+    0.8221,
+    0.9888,
+    0.5701,
+    0.9861
+   ],
+   "breakAI": 0.46,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 143,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "c_haiku45",
+   "name": "Claude Haiku 4.5",
+   "org": "Anthropic",
+   "cap": 0.76,
+   "cs": 0.48,
+   "mean": [
+    0.4476,
+    0.4465,
+    0.8194,
+    0.9834,
+    0.4468,
+    0.9774
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 10,
+   "qT": 138,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_6luna",
+   "name": "GPT-6 Luna",
+   "org": "OpenAI",
+   "cap": 0.84,
+   "cs": 0.56,
+   "mean": [
+    0.4589,
+    0.5148,
+    0.8206,
+    0.9857,
+    0.5201,
+    0.9836
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_55pro",
+   "name": "GPT-5.5 Pro",
+   "org": "OpenAI",
+   "cap": 0.9,
+   "cs": 0.64,
+   "mean": [
+    0.5024,
+    0.5694,
+    0.8221,
+    0.9886,
+    0.5699,
+    0.9863
+   ],
+   "breakAI": 0.46,
+   "breakFull": 0.0067,
+   "qA": 5,
+   "qT": 144,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_54mini",
+   "name": "GPT-5.4 mini",
+   "org": "OpenAI",
+   "cap": 0.78,
+   "cs": 0.5,
+   "mean": [
+    0.4519,
+    0.4712,
+    0.8194,
+    0.9834,
+    0.4759,
+    0.9797
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_5",
+   "name": "GPT-5",
+   "org": "OpenAI",
+   "cap": 0.82,
+   "cs": 0.54,
+   "mean": [
+    0.4552,
+    0.5109,
+    0.8194,
+    0.985,
+    0.5177,
+    0.9811
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_o3",
+   "name": "o3",
+   "org": "OpenAI",
+   "cap": 0.8,
+   "cs": 0.52,
+   "mean": [
+    0.4433,
+    0.4722,
+    0.8194,
+    0.9842,
+    0.4733,
+    0.982
+   ],
+   "breakAI": 0.5067,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "qw72",
+   "name": "Qwen2.5 72B Instruct",
+   "org": "Alibaba",
+   "cap": 0.8,
+   "cs": 0.5,
+   "mean": [
+    0.4418,
+    0.4681,
+    0.8194,
+    0.9842,
+    0.4748,
+    0.982
+   ],
+   "breakAI": 0.5133,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 142,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "l31_8",
+   "name": "Llama 3.1 8B Instruct",
+   "org": "Meta",
+   "cap": 0.62,
+   "cs": 0.36,
+   "mean": [
+    0.3497,
+    0.3383,
+    0.8185,
+    0.972,
+    0.336,
+    0.9646
+   ],
+   "breakAI": 0.5933,
+   "breakFull": 0.0067,
+   "qA": 11,
+   "qT": 138,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "c_haiku55",
+   "name": "Claude Haiku 5.5",
+   "org": "Anthropic",
+   "cap": 0.82,
+   "cs": 0.55,
+   "mean": [
+    0.4552,
+    0.5109,
+    0.8194,
+    0.985,
+    0.512,
+    0.9811
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_astra",
+   "name": "GPT-6 Astra",
+   "org": "OpenAI",
+   "cap": 0.95,
+   "cs": 0.72,
+   "mean": [
+    0.5179,
+    0.6344,
+    0.8221,
+    0.9919,
+    0.6233,
+    0.9901
+   ],
+   "breakAI": 0.4467,
+   "breakFull": 0.0067,
+   "qA": 5,
+   "qT": 143,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_56sol",
+   "name": "GPT-5.6 Sol",
+   "org": "OpenAI",
+   "cap": 0.9,
+   "cs": 0.64,
+   "mean": [
+    0.5024,
+    0.5694,
+    0.8221,
+    0.9886,
+    0.5699,
+    0.9863
+   ],
+   "breakAI": 0.46,
+   "breakFull": 0.0067,
+   "qA": 5,
+   "qT": 144,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_55",
+   "name": "GPT-5.5",
+   "org": "OpenAI",
+   "cap": 0.88,
+   "cs": 0.61,
+   "mean": [
+    0.4881,
+    0.5567,
+    0.8221,
+    0.9886,
+    0.5608,
+    0.9848
+   ],
+   "breakAI": 0.4733,
+   "breakFull": 0.0067,
+   "qA": 7,
+   "qT": 142,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_52pro",
+   "name": "GPT-5.2 Pro",
+   "org": "OpenAI",
+   "cap": 0.86,
+   "cs": 0.58,
+   "mean": [
+    0.4784,
+    0.5419,
+    0.8224,
+    0.9886,
+    0.5448,
+    0.9858
+   ],
+   "breakAI": 0.48,
+   "breakFull": 0.0067,
+   "qA": 6,
+   "qT": 143,
+   "qB": 1,
+   "n": 150
+  },
+  {
+   "model": "o_5mini",
+   "name": "GPT-5 mini",
+   "org": "OpenAI",
+   "cap": 0.74,
+   "cs": 0.46,
+   "mean": [
+    0.4308,
+    0.4236,
+    0.8182,
+    0.9827,
+    0.4216,
+    0.9767
+   ],
+   "breakAI": 0.52,
+   "breakFull": 0.0067,
+   "qA": 10,
+   "qT": 138,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "o_oss120",
+   "name": "gpt-oss-120b",
+   "org": "OpenAI",
+   "cap": 0.78,
+   "cs": 0.48,
+   "mean": [
+    0.4522,
+    0.4672,
+    0.8194,
+    0.9834,
+    0.4653,
+    0.9797
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "l33_70",
+   "name": "Llama 3.3 70B Instruct",
+   "org": "Meta",
+   "cap": 0.78,
+   "cs": 0.48,
+   "mean": [
+    0.4522,
+    0.4672,
+    0.8194,
+    0.9834,
+    0.4653,
+    0.9797
+   ],
+   "breakAI": 0.5,
+   "breakFull": 0.0067,
+   "qA": 8,
+   "qT": 140,
+   "qB": 2,
+   "n": 150
+  },
+  {
+   "model": "mis7",
+   "name": "Mistral 7B Instruct",
+   "org": "Mistral AI",
+   "cap": 0.55,
+   "cs": 0.3,
+   "mean": [
+    0.2741,
+    0.279,
+    0.8146,
+    0.9619,
+    0.2794,
+    0.9492
+   ],
+   "breakAI": 0.6733,
+   "breakFull": 0.0067,
+   "qA": 11,
+   "qT": 138,
+   "qB": 1,
+   "n": 150
+  }
+ ],
+ "tot": {
+  "runs": 5550,
+  "quantumAhead": 275,
+  "tied": 5212,
+  "behind": 63,
+  "meanScores": [
+   0.4497,
+   0.495,
+   0.8202,
+   0.9841,
+   0.496,
+   0.9802
+  ]
+ },
+ "byUc": [
+  {
+   "uc": "trial",
+   "name": "Clinical trial site selection",
+   "priv": 0.3,
+   "gap": 0.14,
+   "mean": [
+    0.2969,
+    0.3072,
+    0.7481,
+    0.8639,
+    0.2998,
+    0.8633
+   ],
+   "qA": 3,
+   "qB": 37,
+   "n": 370
+  },
+  {
+   "uc": "sat",
+   "name": "Satellite imaging schedule",
+   "priv": 0.35,
+   "gap": 0.12,
+   "mean": [
+    0.1895,
+    0.2132,
+    0.6065,
+    0.9889,
+    0.2339,
+    0.9889
+   ],
+   "qA": 0,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "enz",
+   "name": "Enzyme design with epistasis",
+   "priv": 0.25,
+   "gap": 0.16,
+   "mean": [
+    0.1615,
+    0.2534,
+    0.9524,
+    0.9984,
+    0.2534,
+    0.9704
+   ],
+   "qA": 79,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "amb",
+   "name": "Ambulance base coverage",
+   "priv": 0.35,
+   "gap": 0.12,
+   "mean": [
+    0.0243,
+    0.1865,
+    0.5,
+    0.9946,
+    0.1865,
+    0.9946
+   ],
+   "qA": 0,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "flood",
+   "name": "Flood relief camp planning",
+   "priv": 0.3,
+   "gap": 0.14,
+   "mean": [
+    0.0865,
+    0.0784,
+    0.6,
+    1,
+    0.0784,
+    0.9973
+   ],
+   "qA": 1,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "budget",
+   "name": "Infrastructure budget allocation",
+   "priv": 0.3,
+   "gap": 0.12,
+   "mean": [
+    0.105,
+    0.3787,
+    0.4752,
+    0.9659,
+    0.376,
+    0.9664
+   ],
+   "qA": 1,
+   "qB": 5,
+   "n": 370
+  },
+  {
+   "uc": "poll",
+   "name": "Election duty roster",
+   "priv": 0.2,
+   "gap": 0.12,
+   "mean": [
+    0,
+    0,
+    0.9274,
+    0.9973,
+    0,
+    0.9943
+   ],
+   "qA": 15,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "vax",
+   "name": "Vaccine cold-chain dispatch",
+   "priv": 0.3,
+   "gap": 0.12,
+   "mean": [
+    0.5374,
+    0.4496,
+    0.8914,
+    0.9939,
+    0.4656,
+    0.9888
+   ],
+   "qA": 74,
+   "qB": 18,
+   "n": 370
+  },
+  {
+   "uc": "rail",
+   "name": "Peak-hour rail slot allocation",
+   "priv": 0.25,
+   "gap": 0.12,
+   "mean": [
+    0.0728,
+    0.0595,
+    0.9615,
+    0.995,
+    0.0595,
+    0.9935
+   ],
+   "qA": 3,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "drug",
+   "name": "Drug discovery: lead optimisation",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.8291,
+    0.8418,
+    0.9731,
+    0.9858,
+    0.8387,
+    0.985
+   ],
+   "qA": 7,
+   "qB": 2,
+   "n": 370
+  },
+  {
+   "uc": "batt",
+   "name": "Battery material discovery",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.9341,
+    0.9263,
+    0.9886,
+    0.9876,
+    0.9253,
+    0.9833
+   ],
+   "qA": 9,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "grid",
+   "name": "Power grid unit commitment",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.8086,
+    0.9156,
+    0.835,
+    0.9959,
+    0.9146,
+    0.993
+   ],
+   "qA": 18,
+   "qB": 1,
+   "n": 370
+  },
+  {
+   "uc": "port",
+   "name": "Portfolio selection",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.9876,
+    0.9925,
+    0.9932,
+    1,
+    0.9924,
+    0.9948
+   ],
+   "qA": 55,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "vans",
+   "name": "Two-van delivery split",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.9136,
+    0.9477,
+    0.9559,
+    0.9976,
+    0.9384,
+    0.9934
+   ],
+   "qA": 10,
+   "qB": 0,
+   "n": 370
+  },
+  {
+   "uc": "box",
+   "name": "Export container loading",
+   "priv": 1,
+   "gap": 0,
+   "mean": [
+    0.7984,
+    0.8747,
+    0.8955,
+    0.9962,
+    0.8772,
+    0.9962
+   ],
+   "qA": 0,
+   "qB": 0,
+   "n": 370
+  }
+ ]
+}
